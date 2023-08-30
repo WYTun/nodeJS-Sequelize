@@ -21,7 +21,7 @@ app.listen(PORT, () => {
 })
 
 const db= require("./app/models");
-db.sequelize.sync();
+db.Sequelize.sync();
 //for production server to force true and resync
 // db.sequelize.sync({ force: true }).then(() => { 
 //     console.log("Drop and re-sync db.");
